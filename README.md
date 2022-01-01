@@ -4,8 +4,10 @@ Changes of MIMIC-IV from MIMIC-III are listed as follows:
 
 1.Structure
 >source database of each table is stated, which clarify the data provenance and data coverage.
+
 2.Contemporary
 >contains data from 2008-2019
+
 3.Category
 * CareVue is no more
 >itemid in d_items with a value less than 220000 are no longer relevant
