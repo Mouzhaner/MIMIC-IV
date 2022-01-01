@@ -15,33 +15,31 @@ Changes of MIMIC-IV compared with MIMIC-III are listed as follows:
 >
 >    <img width="238" alt="Screen Shot 2022-01-01 at 14 33 19" src="https://user-images.githubusercontent.com/96931335/147845244-9ccef165-c850-41c0-afc9-2a7d097f2332.png">
 >
->   * *itemid* in *d_items* with a value less than 220000 are no longer relevant
+>   * *`itemid`* in *d_items* with a value less than 220000 are no longer relevant
 >
->   * *inputenvents_mv* table is renamed *inputevents*
+>   * *inputenvents_mv* table is renamed *`inputevents`*
 > 
->   * *procedureevents_mv* table is renamed *procedureevents*
+>   * *procedureevents_mv* table is renamed *`procedureevents`*
 > 
->   * *icustay_id* is renamed *stay_id*
+>   * *icustay_id* is renamed *`stay_id`*
 >
 > 3. Within module **mimic_hosp**:
 >
 >   * *emar* and *emar_detail*
 > 
->     New tables *emar* and *emar_detail* are avaliable, sourced from the relatively newly installed electronic Medicine Administration Record (eMAR) system.
+>     New tables *`emar`* and *`emar_detail`* are avaliable, sourced from the relatively newly installed electronic Medicine Administration Record (eMAR) system.
 >     Bedside staff will scan barcodes for each individual formulary unit of a medication when administering it. This allows for a granular, high resolution record
->     of when a medication was given. Table schema of *emar* is illustrated as follows:
+>     of when a medication was given. Table schema of *`emar`* is illustrated as follows:
 >    
 >       <img width="308" alt="Screen Shot 2022-01-01 at 14 45 25" src="https://user-images.githubusercontent.com/96931335/147845503-8ed8d44c-c8d1-4481-972f-44215c7cb276.png">
 >
 >    * *labevents*
 >    
->      * reference ranges, i.e. *ref_range_lower* and *ref_range_upper*, are now avaliable
+>      * reference ranges, i.e. *`ref_range_lower`* and *`ref_range_upper`*, are now avaliable
 >     
->      * a specimen identifier, i.e. *specimen_id*, allows users to group all measurements made from a single specimen
+>      * a specimen identifier, i.e. *`specimen_id`*, allows users to group all measurements made from a single specimen
 >      
->      * *priority* indicates the priority level of the laboratory measure: STAT / ROUTINE
->
->        <img width="868" alt="Screen Shot 2022-01-01 at 15 06 12" src="https://user-images.githubusercontent.com/96931335/147845727-33c0293e-6703-4738-afbf-7cb4472ba00c.png">
+>      * *`priority`* indicates the priority level of the laboratory measure: STAT / ROUTINE
 >      
 >        <img width="84" alt="Screen Shot 2022-01-01 at 15 47 00" src="https://user-images.githubusercontent.com/96931335/147846391-a8ce78ea-506a-4d63-a3a9-c7d21984d7dd.png">
 >        <img width="205" alt="Screen Shot 2022-01-01 at 15 47 09" src="https://user-images.githubusercontent.com/96931335/147846393-b5d8d266-00e0-48d8-900e-99490b9f4186.png">
@@ -49,7 +47,7 @@ Changes of MIMIC-IV compared with MIMIC-III are listed as follows:
 >
 >    * *microbiologyevents*
 > 
->      Now contains the name of the test performed, i.e. `*test_name*`
+>      Now contains the name of the test performed, i.e. *`test_name`*
 >     
 >        <img width="291" alt="Screen Shot 2022-01-01 at 16 00 53" src="https://user-images.githubusercontent.com/96931335/147846569-198cae2d-7093-40e5-986f-32855025451e.png">
 
@@ -57,10 +55,11 @@ Changes of MIMIC-IV compared with MIMIC-III are listed as follows:
 
 #### Strategy
 > Years are included instead of just releaseing the week and season in the date-shift strategy.
-  <img width="895" alt="Screen Shot 2022-01-01 at 14 02 54" src="https://user-images.githubusercontent.com/96931335/147845130-2e035c25-f220-4130-82c7-76308e81f2b5.png">
+> 
+> <img width="273" alt="Screen Shot 2022-01-01 at 16 17 09" src="https://user-images.githubusercontent.com/96931335/147846784-a9f01423-7026-4bc5-904c-931651cb3ea5.png">
 
 #### Data
-> Chest x-ray data in MIMIC-CXR is linkable to patient stays in MIMIC-IV
+> Chest x-ray data in MIMIC-CXR is linkable to patient stays in MIMIC-IV.
 
 
 ## Data Extraction
