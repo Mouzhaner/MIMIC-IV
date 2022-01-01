@@ -68,15 +68,6 @@ It contains data from 2008-2019.
 >        
 >        <img width="109" alt="Screen Shot 2022-01-01 at 16 58 23" src="https://user-images.githubusercontent.com/96931335/147847410-bf38e4b3-a8c0-4bf3-9911-0272f4ff5640.png"><img width="60" alt="Screen Shot 2022-01-01 at 16 58 11" src="https://user-images.githubusercontent.com/96931335/147847414-62c2d153-c4bd-4ab2-858c-a455164434cd.png"><img width="80" alt="Screen Shot 2022-01-01 at 16 58 45" src="https://user-images.githubusercontent.com/96931335/147847411-636fc5e9-761c-4c31-855f-8d78d776ba41.png">
 
-
-
-
-
-
-
-
-
-
 ### Strategy
 Years are included instead of just releaseing the week and season in the date-shift strategy.
 > 
@@ -84,31 +75,3 @@ Years are included instead of just releaseing the week and season in the date-sh
 
 ### Data
 Chest x-ray data in MIMIC-CXR is linkable to patient stays in MIMIC-IV.
-
-
-# Data Extraction
-The data extraction steps are run by BigQuery and generates the final view of the data concerning the following diseases:
-* tuberculosis
-* sepsis
-* bacterial infection
-* HIV infection
-* hepatitis
-* viral infection
-* cancer of head and neck
-* Hodgkin's disease
-* leukemia
-* diabetes mellitus without complication
-* nutritional deficiency
-* pulmonary heart disease 
-
-## TODO:
-* generate disease IDs
-* generate patient IDs
-* extract detailed info including specific feautures and survival conditions
-
-## Details
-### disease IDs
->This can be found in 'Reference_table MIMIC-IV' excel
-
-### patient IDs
->This can be found in 'Reference_table MIMIC-IV' excel
