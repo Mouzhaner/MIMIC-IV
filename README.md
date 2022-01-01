@@ -31,17 +31,24 @@ Changes of MIMIC-IV compared with MIMIC-III are listed as follows:
 >     Bedside staff will scan barcodes for each individual formulary unit of a medication when administering it. This allows for a granular, high resolution record
 >     of when a medication was given. Table schema of *emar* is illustrated as follows:
 >    
->     <img width="308" alt="Screen Shot 2022-01-01 at 14 45 25" src="https://user-images.githubusercontent.com/96931335/147845503-8ed8d44c-c8d1-4481-972f-44215c7cb276.png">
+>       <img width="308" alt="Screen Shot 2022-01-01 at 14 45 25" src="https://user-images.githubusercontent.com/96931335/147845503-8ed8d44c-c8d1-4481-972f-44215c7cb276.png">
 >
 >    * *labevents*
 >    
->      * Reference ranges are now avaliable
+>      * Reference ranges, i.e. *ref_range_lower* and *ref_range_upper* are now avaliable
 >     
 >      * *specimen_id* allows users to group all measurements made from a single specimen
 >      
 >      * *priority* indicates the priority level of the laboratory measure, i.e. STAT / ROUTINE
 >
->      <img width="868" alt="Screen Shot 2022-01-01 at 15 06 12" src="https://user-images.githubusercontent.com/96931335/147845727-33c0293e-6703-4738-afbf-7cb4472ba00c.png">
+>        <img width="868" alt="Screen Shot 2022-01-01 at 15 06 12" src="https://user-images.githubusercontent.com/96931335/147845727-33c0293e-6703-4738-afbf-7cb4472ba00c.png">
+>      
+>        <img width="84" alt="Screen Shot 2022-01-01 at 15 47 00" src="https://user-images.githubusercontent.com/96931335/147846391-a8ce78ea-506a-4d63-a3a9-c7d21984d7dd.png">
+>        <img width="205" alt="Screen Shot 2022-01-01 at 15 47 09" src="https://user-images.githubusercontent.com/96931335/147846393-b5d8d266-00e0-48d8-900e-99490b9f4186.png">
+>        <img width="67" alt="Screen Shot 2022-01-01 at 15 48 47" src="https://user-images.githubusercontent.com/96931335/147846417-0d8d6fe9-cf10-4b98-b759-393a5d69172f.png">
+
+
+
 
 
 #### Strategy
