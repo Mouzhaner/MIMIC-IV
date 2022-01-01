@@ -1,16 +1,16 @@
 # MIMIC-IV
 ## About
 Changes of MIMIC-IV from MIMIC-III are listed as follows:
->Structure
->>source database of each table is stated, which clarify the data provenance and data coverage.
->Contemporary
->>contains data from 2008-2019
->Category
->>CareVue is no more
->>>itemid in d_items with a value less than 220000 are no longer relevant
->>>inputenvents_mv table is renamed inputevents
->>>procedureevents_mv table is renamed procedureevents
->>icustay_id is renamed stay_id
+### Structure
+>source database of each table is stated, which clarify the data provenance and data coverage.
+### Contemporary
+>contains data from 2008-2019
+### Category
+* CareVue is no more
+>itemid in d_items with a value less than 220000 are no longer relevant
+>inputenvents_mv table is renamed inputevents
+>procedureevents_mv table is renamed procedureevents
+* icustay_id is renamed stay_id
 
 
 
