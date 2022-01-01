@@ -3,7 +3,9 @@ The data extraction steps are run by BigQuery and generates the final view of th
 
 ##TODO:
 >*generate sepsis disease IDs
+
 >*generate sepsis patient IDs
+
 >*extract detailed info including specific feautures and survival conditions
 
 ##Details
