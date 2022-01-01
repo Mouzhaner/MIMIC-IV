@@ -2,43 +2,55 @@
 ## About
 Changes of MIMIC-IV compared with MIMIC-III are listed as follows:
 
-1. Structure
+#### Structure
 > Source database of each table is stated, which clarify the data provenance and data coverage.
 
-2. Contemporary
+#### Contemporary
 > It contains data from 2008-2019.
 
-3. Category
-> **CareVue** and **Audit trails** are removed. 
+#### Category
+> 1. **CareVue** and **Audit trails** are removed. 
 > 
-> Within module **mimic_icu**:
+> 2. Within module **mimic_icu**:
 >
-> <img width="238" alt="Screen Shot 2022-01-01 at 14 33 19" src="https://user-images.githubusercontent.com/96931335/147845244-9ccef165-c850-41c0-afc9-2a7d097f2332.png">
+>    <img width="238" alt="Screen Shot 2022-01-01 at 14 33 19" src="https://user-images.githubusercontent.com/96931335/147845244-9ccef165-c850-41c0-afc9-2a7d097f2332.png">
 >
-> * *itemid* in *d_items* with a value less than 220000 are no longer relevant
+>   * *itemid* in *d_items* with a value less than 220000 are no longer relevant
 >
-> * *inputenvents_mv* table is renamed *inputevents*
+>   * *inputenvents_mv* table is renamed *inputevents*
 > 
-> * *procedureevents_mv* table is renamed *procedureevents*
+>   * *procedureevents_mv* table is renamed *procedureevents*
 > 
-> * *icustay_id* is renamed *stay_id*
+>   * *icustay_id* is renamed *stay_id*
 >
-> Within module **mimic_hosp**:
+> 3. Within module **mimic_hosp**:
 >
-> * New tables *emar* and *emar_detail* are avaliable, table schema of *emar* is illustrated as follows:
+>   * *emar* and *emar_detail*
 > 
+>     New tables *emar* and *emar_detail* are avaliable, sourced from the relatively newly installed electronic Medicine Administration Record (eMAR) system.
+>     Bedside staff will scan barcodes for each individual formulary unit of a medication when administering it. This allows for a granular, high resolution record
+>     of when a medication was given. Table schema of *emar* is illustrated as follows:
+>    
+>     <img width="308" alt="Screen Shot 2022-01-01 at 14 45 25" src="https://user-images.githubusercontent.com/96931335/147845503-8ed8d44c-c8d1-4481-972f-44215c7cb276.png">
 >
+>    * *labevents*
+>    
+>      * Reference ranges are now avaliable
+>     
+>      * *specimen_id* allows users to group all measurements made from a single specimen
+>      
+>      * *priority* indicates the priority level of the laboratory measure, i.e. STAT / ROUTINE
+>
+>      <img width="868" alt="Screen Shot 2022-01-01 at 15 06 12" src="https://user-images.githubusercontent.com/96931335/147845727-33c0293e-6703-4738-afbf-7cb4472ba00c.png">
 
 
-4. Strategy
+#### Strategy
 > Years are included instead of just releaseing the week and season in the date-shift strategy.
-<img width="895" alt="Screen Shot 2022-01-01 at 14 02 54" src="https://user-images.githubusercontent.com/96931335/147845130-2e035c25-f220-4130-82c7-76308e81f2b5.png">
+  <img width="895" alt="Screen Shot 2022-01-01 at 14 02 54" src="https://user-images.githubusercontent.com/96931335/147845130-2e035c25-f220-4130-82c7-76308e81f2b5.png">
 
-5. Data
+#### Data
 > Chest x-ray data in MIMIC-CXR is linkable to patient stays in MIMIC-IV
 
-6. Table-wise Improvements
-> New tables *emar* and *emar_detail* are avaliable
 
 ## Data Extraction
 The data extraction steps are run by BigQuery and generates the final view of the data concerning the following diseases:
