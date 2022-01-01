@@ -8,6 +8,7 @@ The data extraction steps are run by BigQuery and generates the final view of th
 
 ##Details
 ###disease IDs
->>>This can be found in 'Reference_table MIMIC-IV' excel
+>This can be found in 'Reference_table MIMIC-IV' excel
+
 ###patient IDs
->>>This can be found in 'Reference_table MIMIC-IV' excel
+>This can be found in 'Reference_table MIMIC-IV' excel
